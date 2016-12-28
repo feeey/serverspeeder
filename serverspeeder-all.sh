@@ -60,7 +60,7 @@ elif [ "$DISTRO" == "Ubuntu" ];then
 	apt-get update
 	apt-get install -y lsb-release curl
 else
-	echo "一键脚本暂时只支持centos，ubuntu和debian的安装，其他系统请选择手动安装http://www.91yun.org/serverspeeder91yun"
+	echo "一键脚本暂时只支持centos，ubuntu和debian的安装，其他系统请选择手动安装"
 	exit 1
 fi
 
@@ -106,7 +106,7 @@ if [ $? == 1 ]; then
 
 		if [ $? == 1 ]; then
 			echo -e "\r\n"
-			echo "锐速暂不支持该内核，程序退出.自动安装判断比较严格，你可以到http://www.91yun.org/serverspeeder91yun手动下载安装文件尝试不同版本"
+			echo "锐速暂不支持该内核，程序退出.自动安装判断比较严格，你可以手动下载安装文件尝试不同版本"
 			exit 1
 		fi
 		echo "没有完全匹配的内核，请选一个最接近的尝试，不确保一定成功,(如果有版本号重复的选项随便选一个就可以)"
@@ -122,7 +122,7 @@ if [ $? == 1 ]; then
 
 		if [ $? == 1 ]; then
 			echo -e "\r\n"
-			echo "锐速暂不支持该内核，程序退出.自动安装判断比较严格，你可以到http://www.91yun.org/serverspeeder91yun手动下载安装文件尝试不同版本"
+			echo "锐速暂不支持该内核，程序退出.自动安装判断比较严格，你可以手动下载安装文件尝试不同版本"
 			exit 1
 		fi
 		echo "没有完全匹配的内核，请选一个最接近的尝试，不确保一定成功,(如果有版本号重复的选项随便选一个就可以)"
